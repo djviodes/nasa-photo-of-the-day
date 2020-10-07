@@ -22,8 +22,8 @@ function App() {
 
   return (
     <div className="App">
-      <Title />
-      <Image />
+      <Title title={nasaInfo.title} />
+      <Image image={nasaInfo.url} title={nasaInfo.title} para={nasaInfo.explanation} />
     </div>
   );
 }

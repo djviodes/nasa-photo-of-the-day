@@ -5,7 +5,7 @@ const Title = props => {
 
     return (
         <div className='title-container-wrapper'>
-            <h1 className='title'>{title.title}</h1>
+            <h1 className='title'>{title}</h1>
         </div>
     )
 }
