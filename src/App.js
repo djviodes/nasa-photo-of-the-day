@@ -3,6 +3,14 @@ import axios from 'axios'
 import Title from './components/Title'
 import Image from './components/Image'
 import "./App.css";
+import styled from 'styled-components'
+
+const StyledContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 
 function App() {
   const [nasaInfo, setNasaInfo] = useState([])
@@ -21,10 +29,10 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
+    <StyledContainer className="App">
       <Title title={nasaInfo.title} />
       <Image image={nasaInfo.url} title={nasaInfo.title} para={nasaInfo.explanation} />
-    </div>
+    </StyledContainer>
   );
 }
 
